@@ -144,10 +144,10 @@
     position: relative;
     min-height: 560px;
     border-radius: 28px;
-background:
-radial-gradient(circle at 30% 30%, rgba(120,150,255,0.18), transparent 50%),
-radial-gradient(circle at 70% 70%, rgba(255,120,200,0.12), transparent 50%),
-linear-gradient(135deg, #0f1118 0%, #0b0c10 100%);
+    background:
+      radial-gradient(circle at 30% 30%, rgba(120,150,255,0.18), transparent 50%),
+      radial-gradient(circle at 70% 70%, rgba(255,120,200,0.12), transparent 50%),
+      linear-gradient(135deg, #0f1118 0%, #0b0c10 100%);
     border: 1px solid rgba(255,255,255,0.08);
     overflow: hidden;
     box-shadow: 0 30px 80px rgba(0,0,0,0.35);
@@ -172,30 +172,30 @@ linear-gradient(135deg, #0f1118 0%, #0b0c10 100%);
     overflow: hidden;
     border: 1px solid rgba(255,255,255,0.08);
     background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.03));
-    box-shadow: 0 22px 50px rgba(0,0,0,0.35);
     box-shadow: 0 30px 80px rgba(0,0,0,0.35), 0 0 60px rgba(120,150,255,0.15);
   }
 
-.ai-phone-card.large {
-  width: 62%;
-  height: 76%;
-  top: 10%;
-  left: 8%;
-  transform: rotate(-6deg);
-  z-index: 1;
-}
+  .ai-phone-card.large {
+    width: 62%;
+    height: 76%;
+    top: 10%;
+    left: 8%;
+    transform: rotate(-6deg);
+    z-index: 1;
+  }
 
-.ai-phone-card.small {
-  width: 42%;
-  height: 54%;
-  right: 8%;
-  bottom: 8%;
-  transform: rotate(8deg);
-  z-index: 2;
-}
+  .ai-phone-card.small {
+    width: 42%;
+    height: 54%;
+    right: 8%;
+    bottom: 8%;
+    transform: rotate(8deg);
+    z-index: 2;
+  }
+
   .ai-phone-card:hover {
-  transform: scale(1.03) rotate(-2deg);
-}
+    transform: scale(1.03) rotate(-2deg);
+  }
 
   .ai-card-fill {
     width: 100%;
@@ -208,14 +208,14 @@ linear-gradient(135deg, #0f1118 0%, #0b0c10 100%);
     padding: 18px;
   }
 
-.ai-card-label {
-  width: 100%;
-  border-radius: 16px;
-  background: rgba(0,0,0,0.34);
-  backdrop-filter: blur(10px);
-  padding: 14px;
-  border: 1px solid rgba(255,255,255,0.06);
-}
+  .ai-card-label {
+    width: 100%;
+    border-radius: 16px;
+    background: rgba(0,0,0,0.34);
+    backdrop-filter: blur(10px);
+    padding: 14px;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
 
   .ai-card-label strong {
     display: block;
@@ -421,6 +421,55 @@ linear-gradient(135deg, #0f1118 0%, #0b0c10 100%);
     margin-top: 22px;
   }
 
+  .contact-form {
+    max-width: 720px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.06) !important;
+    color: #fff !important;
+    font-size: 15px;
+    box-shadow: none;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 16px 18px;
+    outline: none;
+  }
+
+  .contact-form textarea {
+    grid-column: 1 / -1;
+    min-height: 140px;
+    resize: vertical;
+  }
+
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: rgba(255,255,255,0.6) !important;
+  }
+
+  .contact-form button {
+    grid-column: 1 / -1;
+    padding: 16px 22px;
+    cursor: pointer;
+    font-weight: 600;
+    background: rgba(255,255,255,0.08) !important;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
   @media (max-width: 980px) {
     .ai-hero,
     .ai-gallery,
@@ -483,35 +532,10 @@ linear-gradient(135deg, #0f1118 0%, #0b0c10 100%);
     .ai-industry {
       padding: 22px;
     }
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 16px 18px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.06);
-  color: #fff;
-  font-size: 15px;
-  outline: none;
-  backdrop-filter: blur(10px);
-  box-sizing: border-box;
-}
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: rgba(255,255,255,0.6);
-}
-
-.contact-form button {
-  padding: 16px 22px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.08);
-  color: #fff;
-  font-weight: 600;
-  font-size: 15px;
-  cursor: pointer;
-}
+    .contact-form {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 
@@ -557,8 +581,7 @@ linear-gradient(135deg, #0f1118 0%, #0b0c10 100%);
         <div class="ai-phone-card large">
           <div class="ai-card-fill" style="background:url('hero-men-perfume.png.png') center/cover no-repeat;">
             <div class="ai-card-label">
-              <strong>Campaign Visual</strong>
-              <span>Fragrance ad with AI model.</span>
+              <strong>Fragrance Ad</strong>
             </div>
           </div>
         </div>
@@ -566,8 +589,7 @@ linear-gradient(135deg, #0f1118 0%, #0b0c10 100%);
         <div class="ai-phone-card small">
           <div class="ai-card-fill" style="background:url('hero-fashion.png.png') center/cover no-repeat;">
             <div class="ai-card-label">
-              <strong>Social Ad</strong>
-              <span>Fast creative variations for paid ads and product campaigns.</span>
+              <strong>Fashion Campaign</strong>
             </div>
           </div>
         </div>
@@ -583,8 +605,8 @@ linear-gradient(135deg, #0f1118 0%, #0b0c10 100%);
       </div>
 
       <div class="ai-gallery">
-<div class="ai-shot tall" style="background:url('beauty.jpg.png') center/cover no-repeat;">          
-  <div class="ai-shot-label">
+        <div class="ai-shot tall" style="background:url('beauty.jpg.png') center/cover no-repeat;">
+          <div class="ai-shot-label">
             <strong>Beauty Campaign</strong>
             <span>AI model + premium skincare visual</span>
           </div>
@@ -701,26 +723,19 @@ linear-gradient(135deg, #0f1118 0%, #0b0c10 100%);
           Start with a simple message and we’ll discuss your campaign, product, or creative direction.
         </p>
 
- <div class="ai-cta-row" style="justify-content:center;">
-  <a class="ai-btn ai-btn-secondary" href="https://wa.me/40734096741">WhatsApp</a>
-</div>
-
-<form action="https://formspree.io/f/mvzwalnz" method="POST" class="contact-form">
-
-<input type="text" name="name" placeholder="Your name" required>
-
-<input type="email" name="email" placeholder="Your email" required>
-
-<input type="text" name="brand" placeholder="Brand / Company">
-
-<textarea name="message" placeholder="Tell us about your project"></textarea>
-
-<button type="submit">Send Request</button>
-
-</form>
-
-        <div class="ai-footer-note">
+        <div class="ai-cta-row" style="justify-content:center;">
+          <a class="ai-btn ai-btn-secondary" href="https://wa.me/40734096741">WhatsApp</a>
         </div>
+
+        <form action="https://formspree.io/f/mvzwalnz" method="POST" class="contact-form">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <input type="text" name="brand" placeholder="Brand / Company">
+          <textarea name="message" placeholder="Tell us about your project"></textarea>
+          <button type="submit">Send Request</button>
+        </form>
+
+        <div class="ai-footer-note"></div>
       </div>
     </section>
 
