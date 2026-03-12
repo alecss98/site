@@ -483,65 +483,34 @@ linear-gradient(135deg, #0f1118 0%, #0b0c10 100%);
     .ai-industry {
       padding: 22px;
     }
-    .contact-form {
-  max-width: 720px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 16px 18px;.contact-form {
-  max-width: 720px;
-  margin: 24px auto 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   padding: 16px 18px;
   border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.10);
-  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.06);
   color: #fff;
   font-size: 15px;
   outline: none;
+  backdrop-filter: blur(10px);
   box-sizing: border-box;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: rgba(255,255,255,0.55);
-}
-
-.contact-form textarea {
-  grid-column: 1 / -1;
-  min-height: 140px;
-  resize: vertical;
+  color: rgba(255,255,255,0.6);
 }
 
 .contact-form button {
-  grid-column: 1 / -1;
   padding: 16px 22px;
-  border: none;
   border-radius: 14px;
-  background: #fff;
-  color: #111;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
   font-weight: 600;
   font-size: 15px;
   cursor: pointer;
-}
-
-@media (max-width: 640px) {
-  .contact-form {
-    grid-template-columns: 1fr;
-  }
 }
   }
 </style>
