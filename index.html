@@ -537,6 +537,95 @@
       grid-template-columns: 1fr;
     }
   }
+  /* MOBILE FIX */
+
+@media (max-width: 900px) {
+
+  .ai-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .ai-hero-visual {
+    min-height: 420px;
+  }
+
+  .ai-phone-card.large {
+    width: 70%;
+    height: 70%;
+    left: 5%;
+    transform: rotate(-4deg);
+  }
+
+  .ai-phone-card.small {
+    width: 50%;
+    height: 45%;
+    right: 5%;
+    transform: rotate(6deg);
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .ai-landing {
+    padding: 20px 14px 40px;
+  }
+
+  .ai-wrap {
+    max-width: 100%;
+  }
+
+  .ai-hero h1 {
+    font-size: 42px;
+    line-height: 1.05;
+  }
+
+  .ai-hero p {
+    font-size: 16px;
+  }
+
+  .ai-gallery {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .ai-shot,
+  .ai-shot.tall {
+    min-height: 240px;
+  }
+
+  .ai-industries {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .ai-services {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-cta {
+    padding: 28px 18px;
+  }
+
+  .ai-btn {
+    width: 100%;
+  }
+
+  .ai-phone-card.large {
+    width: 80%;
+    height: 65%;
+  }
+
+  .ai-phone-card.small {
+    width: 60%;
+    height: 40%;
+  }
+
+}
 </style>
 
 <div class="ai-landing">
