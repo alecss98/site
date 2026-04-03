@@ -847,7 +847,34 @@
       .ai-cta h2 {
         font-size: 26px;
       }
-    }
+    .ai-or-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  max-width: 720px;
+  margin: 8px auto 18px;
+  color: rgba(255,255,255,0.62);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.ai-or-separator::before,
+.ai-or-separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(255,255,255,0.12);
+}
+
+@media (max-width: 640px) {
+  .ai-or-separator {
+    margin: 4px auto 16px;
+    font-size: 12px;
+    gap: 10px;
+  }
+}
   </style>
 </head>
 <body>
@@ -1041,7 +1068,7 @@
         <div class="ai-cta-row" style="justify-content:center;">
           <a class="ai-btn ai-btn-secondary" href="https://wa.me/40734096741">WhatsApp</a>
         </div>
-
+        <div class="ai-or-separator">or</div>
         <form action="https://formspree.io/f/mvzwalnz" method="POST" class="contact-form">
           <input type="text" name="name" placeholder="Your name" required>
           <input type="email" name="email" placeholder="Your email" required>
